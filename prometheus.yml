@@ -1,0 +1,15 @@
+global:
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+
+#alerting:
+#  alertmanagers:
+#  - static_configs:
+#    - targets:
+#rule_files:
+
+# A scrape configuration containing exactly one endpoint to scrape:
+scrape_configs:
+  - job_name: 'node'
+    static_configs:
+    - targets: ['192.168.11.141:9101','192.168.11.141:9102','192.168.11.141:9103','192.168.11.141:9104']

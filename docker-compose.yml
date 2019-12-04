@@ -1,0 +1,29 @@
+version: '3'
+services:
+  grafana:
+    image: "abhilashmishra89/grafana:1.0.1"
+    ports:
+      - "8888:3000"
+    volumes:
+      - /home/samba/prometheus/grafana:/var/lib/grafana
+  prometheus:
+#    build: .
+    image: "abhilashmishra89/prometheus:1.0.1"
+    ports:
+      - "9090:9090"
+  node_exporter_1:
+    image: "abhilashmishra89/node-exporter:1.0.1"
+    ports:
+      - "9101:9100"
+  node_exporter_2:
+    image: "abhilashmishra89/node-exporter:1.0.1"
+    ports:
+      - "9102:9100"
+  node_exporter_3:
+    image: "abhilashmishra89/node-exporter:1.0.1"
+    ports:
+      - "9103:9100"
+  node_exporter_4:
+    image: "abhilashmishra89/node-exporter:1.0.1"
+    ports:
+      - "9104:9100"
