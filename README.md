@@ -4,7 +4,9 @@
 *you might want to add the real node-exporters on seperate machines to get real stats and change the prometheus.yml  and docker-compose.yml accordingly*
 
 
-# docker-compose up
-# access on the browser at http://serverIP:8888 
+* docker-compose up *
+* access on the browser at http://serverIP:8888 *
+
 username: admin
 password: drishti123
+-make sure to change the ip of nodeexporter containers in prometheous.yml
