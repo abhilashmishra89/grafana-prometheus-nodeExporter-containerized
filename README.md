@@ -8,4 +8,6 @@
 * access on the browser at http://serverIP:8888 
 * username: admin
 * password: drishti123
-* make sure to change the ip of nodeexporter containers in prometheous.yml
+* make sure to change the ip of your machine in prometheous.yml
+
+![alt text](https://github.com/abhilashmishra89/grafana-prometheus-nodeExporter-containerized/blob/master/graph.PNG)
