@@ -13,3 +13,4 @@ scrape_configs:
   - job_name: 'node'
     static_configs:
     - targets: ['192.168.11.141:9101','192.168.11.141:9102','192.168.11.141:9103','192.168.11.141:9104']
+# Replace the IP address 192.168.11.141 from your machine's IP.
